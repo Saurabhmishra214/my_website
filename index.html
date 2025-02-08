@@ -43,7 +43,29 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-     <img src="/assets/img/portfolio/SuMina.jpg" alt="SuMina Logo">
+    <style>
+  .navbar-logo {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures proper fit */
+  }
+</style>
+
+<nav>
+  <img id="navLogo" src="/assets/img/portfolio/SuMina.jpg" alt="SuMina Logo" class="navbar-logo">
+</nav>
+
+<script>
+  // JavaScript to allow user to change logo dynamically
+  function setUserLogo(imageUrl) {
+    document.getElementById("navLogo").src = imageUrl;
+  }
+
+  // Example: Change logo dynamically
+  // setUserLogo('https://your-image-link.com/logo.jpg');
+</script>
+
 
 <!--         <h1 class="sitename">Dewi</h1> -->
       </a>
